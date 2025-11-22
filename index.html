@@ -1,282 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>FITPULSE GYM | WhatsApp Fitness Coaching</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #050816;
-      color: #f5f5f5;
-      line-height: 1.6;
-    }
-    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-    .hero {
-      text-align: center;
-      padding: 40px 10px 30px;
-    }
-    .badge {
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: 20px;
-      border: 1px solid #22c55e;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 22px;
-      margin: 24px 0 10px;
-    }
-    p { font-size: 14px; margin-bottom: 8px; color: #d4d4d4; }
-    .highlight { color: #22c55e; font-weight: 600; }
-    .btn-row {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-    .btn {
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 999px;
-      font-size: 14px;
-      cursor: pointer;
-      display: inline-block;
-      text-align: center;
-      min-width: 180px;
-    }
-    .btn-primary {
-      background: #22c55e;
-      color: #022c22;
-      font-weight: 600;
-    }
-    .btn-outline {
-      border: 1px solid #64748b;
-      color: #e5e7eb;
-      background: transparent;
-    }
-    .section {
-      background: #020617;
-      border-radius: 16px;
-      padding: 16px 16px 14px;
-      margin-bottom: 12px;
-      border: 1px solid #1f2937;
-    }
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 6px;
-    }
-    .pill {
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid #334155;
-      font-size: 12px;
-      color: #e5e7eb;
-    }
-    .price-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 8px;
-    }
-    .price-card {
-      flex: 1 1 150px;
-      border-radius: 12px;
-      border: 1px solid #1e293b;
-      padding: 10px;
-      background: #020617;
-    }
-    .price-title {
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-    .price-tag {
-      font-size: 16px;
-      font-weight: 700;
-      color: #22c55e;
-      margin-bottom: 4px;
-    }
-    .tagline {
-      font-size: 12px;
-      color: #9ca3af;
-    }
-    .transform-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-    .transform-item {
-      flex: 1 1 130px;
-      border-radius: 10px;
-      border: 1px solid #1e293b;
-      padding: 8px;
-      font-size: 12px;
-      color: #e5e7eb;
-    }
-    .footer {
-      text-align: center;
-      font-size: 11px;
-      color: #6b7280;
-      margin: 10px 0 0;
-      padding-bottom: 10px;
-    }
-    @media (min-width: 768px) {
-      h1 { font-size: 34px; }
-      .hero { padding-top: 50px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega.nz Direct Link Generator</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Vue.js 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .fade-enter-active,
+        .fade-leave-active {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .fade-enter-from,
+        .fade-leave-to {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="badge">WhatsApp-based Coaching • Limited Spots</div>
-      <h1>Get Fit with <span class="highlight">FITPULSE GYM</span></h1>
-      <p>1:1 personalised workout & diet plans delivered directly on WhatsApp.<br>
-         No apps. No confusion. Just clear instructions and real results.</p>
+<body class="bg-neutral-900 text-neutral-200 antialiased">
 
-      <div class="btn-row">
-        <a class="btn btn-primary"
-          href="https://wa.me/918692946754?text=Hi%20FITPULSE%20GYM%2C%20I%20want%20to%20book%20a%20free%20fitness%20consultation.">
-          💬 Book Free Consultation
-        </a>
-        <a class="btn btn-outline"
-          href="https://wa.me/918692946754?text=Hi%2C%20please%20send%20me%20your%20plans%20and%20pricing.">
-          📋 View Plans & Pricing
-        </a>
-      </div>
-    </section>
+    <div id="app" class="flex flex-col min-h-screen">
+        
+        <!-- Main Content Area -->
+        <main class="flex-grow flex items-center justify-center p-4">
+            <div class="w-full max-w-lg space-y-8">
+                <!-- Header Section -->
+                <div class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto text-red-500 mb-4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Mega Direct Link Generator</h1>
+                    <p class="mt-3 text-neutral-400">Paste your Mega.nz URL to get file info and a direct download link.</p>
+                </div>
 
-    <!-- WHO IT'S FOR -->
-    <section class="section">
-      <h2>Who is this for?</h2>
-      <p>Perfect if you are:</p>
-      <div class="pill-list">
-        <span class="pill">Busy IT professional</span>
-        <span class="pill">Student with irregular schedule</span>
-        <span class="pill">Work-from-home lifestyle</span>
-        <span class="pill">Beginner afraid of heavy gyms</span>
-        <span class="pill">Someone who tried but couldn’t stay consistent</span>
-      </div>
-    </section>
+                <!-- Input Form -->
+                <div class="space-y-4">
+                    <input 
+                        type="url"
+                        v-model="megaUrl"
+                        @keyup.enter="getFileInfo"
+                        placeholder="https://mega.nz/file/..."
+                        class="w-full px-4 py-3 bg-neutral-800 border-2 border-neutral-700 rounded-lg text-neutral-200 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all duration-200"
+                    >
+                    <button
+                        @click="getFileInfo"
+                        :disabled="loading || !megaUrl"
+                        class="w-full py-3 px-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 disabled:bg-red-800 disabled:cursor-not-allowed disabled:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-red-500 transition-colors duration-200 flex items-center justify-center space-x-2"
+                    >
+                        <svg v-if="loading" class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        <svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"/></svg>
+                        <span>{{ loading ? 'Generating...' : 'Generate Link' }}</span>
+                    </button>
+                </div>
 
-    <!-- SERVICES -->
-    <section class="section">
-      <h2>What you get on WhatsApp 💬</h2>
-      <ul style="font-size: 14px; margin-left: 18px; margin-top: 6px;">
-        <li>Custom workout plan (home / gym)</li>
-        <li>Diet chart based on your food habits</li>
-        <li>Weekly progress check-ins</li>
-        <li>Form correction by sending photos/videos</li>
-        <li>Daily reminder & accountability messages</li>
-      </ul>
-      <div class="btn-row" style="justify-content:flex-start; margin-top:10px;">
-        <a class="btn btn-primary"
-          href="https://wa.me/918692946754?text=I%20want%20a%20custom%20plan.%20Here%20are%20my%20details%3A%0A%0AName%3A%0AAge%3A%0AWeight%3A%0AGoal%20(Fat%20loss%2FMuscle%20gain%2FGeneral%20fitness)%3A">
-          ✍️ Create My Plan
-        </a>
-      </div>
-    </section>
+                <!-- Error Message Display -->
+                <transition name="fade">
+                    <div v-if="error" class="bg-red-900/50 border border-red-700 text-red-300 px-4 py-3 rounded-lg text-center">
+                        <p>{{ error }}</p>
+                    </div>
+                </transition>
 
-    <!-- PRICING -->
-    <section class="section">
-      <h2>Simple & Transparent Pricing 💸</h2>
-      <div class="price-row">
-        <div class="price-card">
-          <div class="price-title">Starter (4 Weeks)</div>
-          <div class="price-tag">₹1,999</div>
-          <p class="tagline">Perfect for beginners who want to start.</p>
-        </div>
-        <div class="price-card">
-          <div class="price-title">Transformation (12 Weeks)</div>
-          <div class="price-tag">₹4,999</div>
-          <p class="tagline">Serious results with full accountability.</p>
-        </div>
-        <div class="price-card">
-          <div class="price-title">1:1 VIP Coaching</div>
-          <div class="price-tag">₹9,999 / 12 Weeks</div>
-          <p class="tagline">Direct chat access & priority support.</p>
-        </div>
-      </div>
-      <div class="btn-row" style="justify-content:flex-start; margin-top:10px;">
-        <a class="btn btn-outline"
-          href="https://wa.me/918692946754?text=I%20want%20to%20join%20the%20Transformation%20plan.%20Please%20share%20payment%20details.">
-          ✅ I Want to Join
-        </a>
-      </div>
-    </section>
+                <!-- Results Section -->
+                <transition name="fade">
+                    <div v-if="fileInfo" class="bg-neutral-800/50 border border-neutral-700 rounded-lg p-6 space-y-4">
+                        <h2 class="text-lg font-semibold text-white border-b border-neutral-700 pb-3 mb-4">File Information</h2>
+                        
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-neutral-400">File Name:</span>
+                            <span class="text-white font-medium text-right break-all">{{ fileInfo.file_name }}</span>
+                        </div>
 
-    <!-- TRANSFORMATIONS -->
-    <section class="section">
-      <h2>Real Transformations ⚡</h2>
-      <p>Some examples of what’s possible with consistent WhatsApp coaching:</p>
-      <div class="transform-grid">
-        <div class="transform-item">
-          <strong>Rohit • 31</strong><br />
-          Lost 8kg in 10 weeks while working full-time in IT.
-        </div>
-        <div class="transform-item">
-          <strong>Ananya • 24</strong><br />
-          Improved strength & confidence, from zero workout history.
-        </div>
-        <div class="transform-item">
-          <strong>Imran • 36</strong><br />
-          Fixed posture & back pain with mobility + strength plan.
-        </div>
-      </div>
-    </section>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-neutral-400">File Size:</span>
+                            <span class="text-white font-medium">{{ formattedFileSize }}</span>
+                        </div>
 
-    <!-- HOW IT WORKS -->
-    <section class="section">
-      <h2>How it works (3 easy steps)</h2>
-      <ol style="font-size: 14px; margin-left: 18px; margin-top: 6px;">
-        <li>Tap WhatsApp button & share your basic details</li>
-        <li>We understand your goal & suggest best plan</li>
-        <li>You receive your plan on WhatsApp & start training</li>
-      </ol>
-      <div class="btn-row" style="justify-content:flex-start; margin-top:10px;">
-        <a class="btn btn-primary"
-          href="https://wa.me/918692946754?text=Hi%2C%20I%20want%20to%20know%20which%20plan%20is%20best%20for%20me.">
-          🤝 Talk to Coach on WhatsApp
-        </a>
-      </div>
-    </section>
+                        <!-- Direct Link Display + Copy -->
+                        <div class="pt-4 space-y-2">
+                            <div class="flex items-center justify-between text-sm mb-1">
+                                <span class="text-neutral-400">Direct Link:</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2">
+                                <input
+                                    type="text"
+                                    :value="directLink"
+                                    readonly
+                                    class="flex-1 px-3 py-2 bg-neutral-900 border border-neutral-700 rounded-lg text-xs sm:text-sm text-neutral-200 break-all cursor-text"
+                                >
+                                <button
+                                    @click="copyDirectLink"
+                                    :disabled="!directLink"
+                                    class="sm:w-auto w-full px-4 py-2 bg-neutral-700 text-white text-sm font-medium rounded-lg hover:bg-neutral-600 disabled:bg-neutral-800 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center space-x-2"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span>Copy Link</span>
+                                </button>
+                            </div>
+                            <p v-if="copyStatus" class="text-xs mt-1" :class="copyStatusClass">
+                                {{ copyStatus }}
+                            </p>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <button
+                                @click="downloadFile"
+                                :disabled="isDownloading"
+                                class="w-full flex items-center justify-center space-x-2 text-center py-3 px-4 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-green-500 transition-colors duration-200 disabled:bg-green-800 disabled:cursor-not-allowed"
+                            >
+                               <svg v-if="isDownloading" class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                               </svg>
+                               <svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                               <span>{{ isDownloading ? 'Downloading...' : 'Download Now' }}</span>
+                            </button>
+                        </div>
+                    </div>
+                </transition>
+            </div>
+        </main>
 
-    <!-- LOCATION -->
-    <section class="section">
-      <h2>Location & Timings</h2>
-      <p><strong>FITPULSE GYM Studio</strong><br/>
-        Andheri West, Mumbai (Landmark: XYZ)</p>
-      <p><strong>Timings:</strong><br/>
-        Mon–Sat: 6:00 AM – 10:00 PM<br/>
-        Online coaching available Pan-India 🌐
-      </p>
-      <div class="btn-row" style="justify-content:flex-start; margin-top:10px;">
-        <a class="btn btn-outline"
-          href="https://wa.me/918692946754?text=Please%20share%20your%20location%20Google%20Maps%20link.">
-          📍 Send Me Location
-        </a>
-      </div>
-    </section>
-
-    <div class="footer">
-      © <span id="year"></span> FITPULSE GYM • WhatsApp Fitness Coaching
+        <!-- Footer -->
+        <footer class="w-full text-center p-4 text-neutral-600 text-sm">
+            <p>Made with ❤️ by thecapt1917</p>
+        </footer>
     </div>
-  </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script>
+        const { createApp, ref, computed } = Vue;
+
+        createApp({
+            setup() {
+                const megaUrl = ref('');
+                const fileInfo = ref(null);
+                const directLink = ref('');
+                const loading = ref(false);
+                const error = ref(null);
+                const isDownloading = ref(false);
+
+                // New: copy status
+                const copyStatus = ref('');
+                const copyStatusType = ref(''); // 'success' | 'error' | ''
+
+                const apiEndpoint = 'https://mega.wldbs.workers.dev/api/info';
+
+                const formatBytes = (bytes, decimals = 2) => {
+                    if (!bytes) return '0 Bytes';
+                    const k = 1024;
+                    const dm = decimals < 0 ? 0 : decimals;
+                    const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+                    const i = Math.floor(Math.log(bytes) / Math.log(k));
+                    return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+                };
+
+                const formattedFileSize = computed(() => {
+                    return fileInfo.value ? formatBytes(fileInfo.value.file_size) : '';
+                });
+
+                const copyStatusClass = computed(() => {
+                    if (copyStatusType.value === 'success') {
+                        return 'text-green-400';
+                    } else if (copyStatusType.value === 'error') {
+                        return 'text-red-400';
+                    }
+                    return 'text-neutral-400';
+                });
+
+                const getFileInfo = async () => {
+                    if (loading.value || !megaUrl.value.trim()) return;
+
+                    loading.value = true;
+                    error.value = null;
+                    fileInfo.value = null;
+                    directLink.value = '';
+                    copyStatus.value = '';
+                    copyStatusType.value = '';
+
+                    if (!megaUrl.value.startsWith('https://mega.nz/file/')) {
+                        error.value = 'Only Mega.nz file links are supported (must start with https://mega.nz/file/). Folders are not supported.';
+                        loading.value = false;
+                        return;
+                    }
+                    
+                    const formData = new FormData();
+                    formData.append('megaurl', megaUrl.value);
+
+                    try {
+                        const response = await fetch(apiEndpoint, {
+                            method: 'POST',
+                            body: formData,
+                        });
+
+                        if (!response.ok && response.status !== 400) {
+                            throw new Error(`API responded with status: ${response.status}`);
+                        }
+
+                        const data = await response.json();
+
+                        if (data.ok) {
+                            fileInfo.value = data;
+                            const base64Url = btoa(megaUrl.value);
+                            directLink.value = `https://mega.wldbs.workers.dev/download?url=${base64Url}`;
+                        } else {
+                            throw new Error(data.error || 'The API could not process the URL.');
+                        }
+
+                    } catch (e) {
+                        console.error('Fetch error:', e);
+                        error.value = e.message || 'Failed to fetch file info.';
+                    } finally {
+                        loading.value = false;
+                    }
+                };
+                
+                const downloadFile = () => {
+                    if (!directLink.value || isDownloading.value) return;
+
+                    isDownloading.value = true;
+                    error.value = null;
+
+                    setTimeout(() => {
+                        window.location.href = directLink.value;
+                        setTimeout(() => {
+                            isDownloading.value = false;
+                        }, 5000);
+                    }, 500);
+                };
+
+                // New: copy direct link to clipboard
+                const copyDirectLink = async () => {
+                    if (!directLink.value) return;
+
+                    try {
+                        await navigator.clipboard.writeText(directLink.value);
+                        copyStatus.value = 'Direct link copied to clipboard!';
+                        copyStatusType.value = 'success';
+                    } catch (e) {
+                        console.error('Clipboard error:', e);
+                        copyStatus.value = 'Failed to copy link. Please copy it manually.';
+                        copyStatusType.value = 'error';
+                    }
+
+                    setTimeout(() => {
+                        copyStatus.value = '';
+                        copyStatusType.value = '';
+                    }, 3000);
+                };
+
+                return {
+                    megaUrl,
+                    fileInfo,
+                    directLink,
+                    loading,
+                    error,
+                    isDownloading,
+                    formattedFileSize,
+                    copyStatus,
+                    copyStatusClass,
+                    getFileInfo,
+                    downloadFile,
+                    copyDirectLink,
+                };
+            }
+        }).mount('#app');
+    </script>
+
 </body>
 </html>
